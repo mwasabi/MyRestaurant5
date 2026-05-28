@@ -37,6 +37,11 @@
             btnReceiveRequest = new Button();
             lstRequests = new ListBox();
             txtResults = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)numTea).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numEgg).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numChicken).BeginInit();
@@ -61,28 +66,28 @@
             // 
             // numTea
             // 
-            numTea.Location = new Point(21, 69);
+            numTea.Location = new Point(92, 72);
             numTea.Name = "numTea";
             numTea.Size = new Size(150, 27);
             numTea.TabIndex = 2;
             // 
             // numEgg
             // 
-            numEgg.Location = new Point(21, 114);
+            numEgg.Location = new Point(92, 133);
             numEgg.Name = "numEgg";
             numEgg.Size = new Size(150, 27);
             numEgg.TabIndex = 3;
             // 
             // numChicken
             // 
-            numChicken.Location = new Point(21, 158);
+            numChicken.Location = new Point(92, 196);
             numChicken.Name = "numChicken";
             numChicken.Size = new Size(150, 27);
             numChicken.TabIndex = 4;
             // 
             // btnSendToCook
             // 
-            btnSendToCook.Location = new Point(21, 254);
+            btnSendToCook.Location = new Point(92, 296);
             btnSendToCook.Name = "btnSendToCook";
             btnSendToCook.Size = new Size(94, 29);
             btnSendToCook.TabIndex = 5;
@@ -92,7 +97,7 @@
             // 
             // btnReceiveRequest
             // 
-            btnReceiveRequest.Location = new Point(21, 205);
+            btnReceiveRequest.Location = new Point(92, 245);
             btnReceiveRequest.Name = "btnReceiveRequest";
             btnReceiveRequest.Size = new Size(94, 29);
             btnReceiveRequest.TabIndex = 6;
@@ -103,25 +108,75 @@
             // lstRequests
             // 
             lstRequests.FormattingEnabled = true;
-            lstRequests.Location = new Point(21, 318);
+            lstRequests.Location = new Point(354, 110);
             lstRequests.Name = "lstRequests";
             lstRequests.Size = new Size(275, 104);
             lstRequests.TabIndex = 7;
             // 
             // txtResults
             // 
-            txtResults.Location = new Point(404, 276);
+            txtResults.Location = new Point(354, 279);
             txtResults.Multiline = true;
             txtResults.Name = "txtResults";
             txtResults.ScrollBars = ScrollBars.Vertical;
             txtResults.Size = new Size(325, 146);
             txtResults.TabIndex = 8;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(14, 79);
+            label2.Name = "label2";
+            label2.Size = new Size(32, 20);
+            label2.TabIndex = 9;
+            label2.Text = "Tea";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(14, 140);
+            label3.Name = "label3";
+            label3.Size = new Size(35, 20);
+            label3.TabIndex = 10;
+            label3.Text = "Egg";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(14, 203);
+            label4.Name = "label4";
+            label4.Size = new Size(60, 20);
+            label4.TabIndex = 11;
+            label4.Text = "Chicken";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(354, 245);
+            label5.Name = "label5";
+            label5.Size = new Size(49, 20);
+            label5.TabIndex = 12;
+            label5.Text = "Result";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(354, 79);
+            label6.Name = "label6";
+            label6.Size = new Size(53, 20);
+            label6.TabIndex = 13;
+            label6.Text = "Orders";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
             Controls.Add(txtResults);
             Controls.Add(lstRequests);
             Controls.Add(btnReceiveRequest);
@@ -151,5 +206,10 @@
         private Button btnReceiveRequest;
         private ListBox lstRequests;
         private TextBox txtResults;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
     }
 }
